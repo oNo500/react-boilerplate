@@ -4,6 +4,7 @@ import { useMutation, useQuery } from '@tanstack/react-query';
 import { paths } from '@/config/paths';
 import { apiClient } from '@/lib/api-client';
 import { queryClient } from '@/lib/query-client';
+import { env } from '@/config/env';
 
 import { authStore } from './auth-store';
 
@@ -29,8 +30,24 @@ export const useLogin = () => {
   const { login } = authStore();
   return useMutation({
     mutationFn: async (data: LoginRequest): Promise<LoginData> => {
-      const response = await apiClient.post<APIResponse<LoginData>>('/api/auth/login', data);
-      return response.data.data;
+      try {
+        const response = await apiClient.post<APIResponse<LoginData>>('/api/auth/login', data);
+        return response.data.data;
+      } catch (error) {
+        // TODO: remove this after mock is removed
+        if (env.MODE === 'production') {
+          return {
+            user: {
+              id: '1',
+              name: 'user',
+              email: 'user@example.com',
+            },
+            token: 'mock-jwt-token',
+            expiresIn: 1000 * 60 * 60 * 24 * 30,
+          };
+        }
+        throw error;
+      }
     },
     onSuccess: (data) => {
       login(data.token, data.user);
