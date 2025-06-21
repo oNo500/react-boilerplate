@@ -24,33 +24,6 @@ A complete toolkit for modern React development, providing a production-ready ap
 ## 📁 Project Structure
 
 ```markdown
-Markdown
-
-Of course, here is the rigorously generated README translated into English.
-
----
-
-# React Boilerplate
-
-A complete toolkit for modern React development, providing a production-ready application architecture.
-
-## ✨ Features
-
-- **Monorepo Architecture**: Managed with Turborepo and pnpm workspaces to improve development efficiency and code reuse.
-- **Multiple App Examples**: Provides three distinct application templates:
-  - A full-featured `admin` dashboard (React 19 + Vite).
-  - A `nextjs-app` (Next.js 15).
-  - A basic `react-vite` starter template.
-- **Shared UI Library**: Includes a shared UI package (`@repo/ui`) built on the principles of shadcn/ui, with Storybook for component visualization and testing.
-- **Centralized Tooling**: Provides shared configurations for the entire workspace, including TypeScript (`@repo/ts-config`) and ESLint (`@repo/lint-config`), to ensure code consistency.
-- **Modern Tech Stack**: Fully utilizes cutting-edge technologies like React 19, Vite, and Tailwind CSS v4.
-- **State Management & Data Fetching**: Implements Zustand for state management and TanStack Query (React Query) for data fetching.
-- **Complete Authentication Flow**: Demonstrates a full user authentication flow including login, registration, and logout in the `admin` and `nextjs-app` applications.
-- **Comprehensive Testing Suite**: Equipped with Playwright for End-to-End (E2E) testing and Vitest for unit/component testing.
-- **Code Quality Assurance**: Enforces code standards with ESLint and Prettier, standardizes commit messages with commitlint, and automates checks using Husky Git hooks.
-
-## 📁 Project Structure
-
 .
 ├── apps/ # Directory for standalone applications
 │ ├── admin/ # A full-featured admin dashboard application (React 19 + Vite)
