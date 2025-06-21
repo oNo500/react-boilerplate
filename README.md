@@ -1,6 +1,3 @@
-Of course, here is the rigorously generated README translated into English.
-
----
 
 # React Boilerplate
 
