@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig.json",
+  "display": "Base",
+
+  "compilerOptions": {
+    // 🔧 base options
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ES2022",
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+    "useDefineForClassFields": true,
+
+    // 🔒 strict mode
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noUncheckedSideEffectImports": true,
+    // "erasableSyntaxOnly": true,
+
+    // ⚡ performance optimization
+    "incremental": true,
+
+    // 🚀 non-transpilation mode
+    "module": "preserve",
+    "noEmit": true
+  }
+}

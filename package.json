@@ -1,0 +1,32 @@
+{
+  "name": "react-boilerplate",
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@commitlint/types": "^19.8.1",
+    "@repo/lint-config": "workspace:*",
+    "@repo/ts-config": "workspace:*",
+    "eslint": "^9.28.0",
+    "husky": "^9.1.7",
+    "jiti": "^2.4.2",
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.12",
+    "syncpack": "14.0.0-alpha.12",
+    "turbo": "^2.5.4",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=22.11.0"
+  },
+  "packageManager": "pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build --log-order=grouped",
+    "check-types": "turbo run check-types",
+    "dev": "turbo run dev",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint:fix",
+    "prepare": "husky"
+  }
+}

@@ -1,0 +1,70 @@
+import { Meta } from "@storybook/addon-docs/blocks";
+
+<Meta title="Intro"/>
+
+# Introduction to UI Component Library
+
+This component library is based on React, suitable for scenarios such as admin panels and management systems. It supports theme customization and offers a modern development experience. The component style is inspired by [shadcn/ui](https://ui.shadcn.com/) and optimized according to the actual needs of our team.
+
+---
+
+## Quick Start
+
+**Install Dependencies**
+
+```bash
+pnpm add @repo/ui
+```
+
+**Import Global Styles**
+
+Import in your project's entry file (e.g., `main.tsx` or `app.tsx`):
+
+```ts
+import '@repo/ui/styles/globals.css';
+```
+
+**Using Components**
+
+```tsx
+import { Button } from '@repo/ui/components/button';
+
+<Button variant="primary">Button</Button>
+```
+
+---
+
+## Component Overview
+
+- **Button**: Multiple variants, sizes, supports icons and loading states.
+- **Avatar**: User profile picture display.
+- **DropdownMenu**: Multi-level menus and interactions.
+- **Sonner**: Lightweight notification messages.
+- **Label**, **Input**, **Form**, **Card**, etc.
+
+See the component documentation on the left for details.
+
+---
+
+## Theming and Customization
+
+- For theme colors and dark mode, see the [Colors](/?path=/docs/colors) documentation.
+- Supports custom CSS variables, see `globals.css` for details.
+- Can be flexibly extended with tools like Tailwind CSS.
+
+---
+
+## Storybook Guide
+
+- Interactively preview all components through Storybook.
+- Supports props configuration, theme switching, code examples, etc.
+- For advanced usage and configuration, see [Configure your project](/?path=/docs/configure-your-project).
+
+---
+
+## References and Acknowledgements
+
+- Design and implementation inspired by [shadcn/ui](https://ui.shadcn.com/).
+- Thanks to the open-source community for their contributions.
+
+

@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.base.json",
+  "display": "Base Library",
+
+  "compilerOptions": {
+    // 🔧 React/JSX support
+    "jsx": "react-jsx",
+    "lib": ["es2022", "DOM", "DOM.Iterable"],
+
+    // 📦 library development config
+    "declaration": true,
+    "moduleResolution": "bundler",
+    "declarationMap": true
+  }
+}
