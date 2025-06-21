@@ -48,7 +48,7 @@
   "private": true,
   "scripts": {
     "build": "tsc -b && vite build",
-    "dev": "vite --port 5173",
+    "dev": "vite --port 6060",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "preview": "vite preview",
